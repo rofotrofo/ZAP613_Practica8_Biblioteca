@@ -2,10 +2,9 @@
 //
 
 #include <iostream>
-#include <stdio.h>
+
 #include <string>
-#include <cstring>
-#include <Windows.h>
+
 
 
 int main()
@@ -29,7 +28,20 @@ int main()
             std::getline(std::cin, autor[x]);
 
             std::cout << "Ingresa el anio de release del juego " << x + 1 << "\n";
-            std::cin >> anio[x];
+            
+            while (true)
+            {
+                std::cin >> anio[x];
+                if (!std::cin.good())
+                {
+                    std::cout << "\nNo ingresaste un numero entero.\n";
+                    std::cout << "Ingresa el anio de release del juego " << x + 1 << "\n";
+                    std::cin.clear();
+                    std::cin.ignore(std::numeric_limits<int>::max(), '\n');
+                }
+                else
+                    break;
+            }
            
             system("pause");
             system("CLS");
@@ -39,11 +51,11 @@ int main()
         {
             std::cout<<"------------------------\n";
             std::cout << "Juego "<<x+1<<"\n";
-            std::cout << titulo[x] <<"\n";
+            std::cout <<"Titulo: "<< titulo[x] << "\n";
 
-            std::cout << autor[x] << "\n";
+            std::cout <<"Autor: "<< autor[x] << "\n";
 
-            std::cout << anio[x] << "\n";
+            std::cout <<"Anio: "<< anio[x] << "\n";
             std::cout<<"------------------------\n";
         }
 

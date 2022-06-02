@@ -1,3 +1,3 @@
 ﻿  ZAP613_Practica8_Biblioteca.cpp
-D:\DSI208\Documentos\GitHub\ZAP613_Fundamentos_de_programacion\ZAP613_Practica8_Biblioteca\ZAP613_Practica8_Biblioteca.cpp(13,9): warning C4101: 'x': variable local sin referencia
+D:\DSI208\Documentos\GitHub\ZAP613_Fundamentos_de_programacion\ZAP613_Practica8_Biblioteca\ZAP613_Practica8_Biblioteca.cpp(12,9): warning C4101: 'x': variable local sin referencia
   ZAP613_Practica8_Biblioteca.vcxproj -> D:\DSI208\Documentos\GitHub\ZAP613_Fundamentos_de_programacion\ZAP613_Practica8_Biblioteca\Debug\ZAP613_Practica8_Biblioteca.exe
